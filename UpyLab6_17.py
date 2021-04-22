@@ -115,7 +115,7 @@ def check_regions(grille): #Function to verify each region (3x3 square)
                     return False
     return True
 
-def check_sudoku(grille): #Function to verify if the complete solution for the puzzle is correct
+def check_sudoku(grille): #Function that calls the previous functions to verify if the solution presented for the puzzle is correct, returning True if so, and False otherwise
     if check_regions(grille) == True and check_cols(grille) == True and check_rows(grille) == True:
         return True
     return False
